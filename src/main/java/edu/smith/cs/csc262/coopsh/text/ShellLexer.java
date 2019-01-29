@@ -3,7 +3,7 @@ package edu.smith.cs.csc262.coopsh.text;
 import java.util.ArrayList;
 import java.util.List;
 
-//cat hello.txt
+// cat hello.txt
 // ls [dir]
 // cd
 // wc -l foo.txt

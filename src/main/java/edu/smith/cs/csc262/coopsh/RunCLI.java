@@ -29,7 +29,7 @@ public class RunCLI {
 		// Take many lines of input from the user.
 		while(true) {
 			// Print half a line, and flush so it really goes out.
-			System.out.print("$ ");
+			System.out.print(env.getOrElse("PS1", "$ "));
 			// UNIX systems often don't print anything until they see a newline, because they're lazy.
 			System.out.flush();
 			
