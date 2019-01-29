@@ -1,6 +1,26 @@
 # CSC262P1
 Smith College / CSC262 Operating Systems / Cooperative Multitasking Shell in Java
 
+## Getting started
+
+Fork this repo so you can push changes as you work (and have offsite backup if your computer has a bad day).
+
+### Import to IntelliJ or Eclipse
+
+[Detailed Eclipse Instructions for importing maven/git projects](https://github.com/jjfiv/GuessingGame#how-to-import-this-project-into-eclipse-10), courtesy of teaching CSC212.
+
+IntelliJ is easier, I can help.
+
+### Build & Run from the Terminal
+
+    # git clone the code (earlier)
+    cd CSC262P1
+    # edit the code
+    # build
+    mvn package
+    # run
+    java -jar target/CoopShell-1.0-SNAPSHOT.jar
+
 ## Learning Goals
 
 Learn a little bit about how the UNIX shell works from an inside perspective, while looking at a form of scheduling that is not based on interrupts and timeslices.
@@ -16,7 +36,7 @@ These tasks are required parts of the assignment for full credit.
 ### Extend some UNIX tools
 
 - WordCount only counts words, not lines or bytes.
-- ``cd``, the builtin does not super the user's home. How do we find the home in Java?
+- ``cd``, the builtin does not support the user's home. How do we find the home in Java?
 
 ### Implement Some UNIX-style Tools
 
