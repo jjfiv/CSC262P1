@@ -125,16 +125,21 @@ public class ShellLexer {
 				
 				// what is it escaping?
 				int escaped = peek();
-				switch (escaped) {
+				switch (escaped) {	
 					case -1:
 						error("unexpected end of line in escape");
 					case '"':
 					case '\'':
 						sb.append((char) getc());
+						break;
 					case 'n':
 						sb.append('\n');
+						getc();
+						break;
 					case 't':
 						sb.append('\t');
+						getc();
+						break;
 					default:
 						error("unhandled escape character: '"+(char) escaped+"'");	
 				}
